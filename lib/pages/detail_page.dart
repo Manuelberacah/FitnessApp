@@ -213,8 +213,7 @@ class _DetailPageState extends State<DetailPage> {
     );
   }
 
-  Widget _buildIngredientsList() {
-    // Dummy ingredients list
+  Widget _buildIngredientsList() {    
     final List<String> ingredients = [
       'Flour - 1 cup',
       'Eggs - 2',

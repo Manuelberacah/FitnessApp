@@ -267,7 +267,6 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             itemBuilder: (context, index) {
               return GestureDetector(
                 onTap: () {
-                  // Show a snackbar when category is tapped
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text('${categories[index].name} category selected'),
