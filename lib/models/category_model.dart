@@ -4,11 +4,13 @@ class CategoryModel {
   String name;
   String iconPath;
   Color boxColor;
+  int mealCount;
 
   CategoryModel({
     required this.name,
     required this.iconPath,
     required this.boxColor,
+    required this.mealCount,
   });
   
   static List<CategoryModel> getCategories() {
@@ -18,7 +20,8 @@ class CategoryModel {
       CategoryModel(
         name: 'Salad',
         iconPath: 'assets/icons/plate.svg',
-        boxColor: Color(0xff9DCEFF)
+        boxColor: Color(0xff9DCEFF),
+        mealCount: 12,
       )
     );
 
@@ -26,7 +29,8 @@ class CategoryModel {
       CategoryModel(
         name: 'Cake',
         iconPath: 'assets/icons/pancakes.svg',
-        boxColor: Color(0xffEEA4CE)
+        boxColor: Color(0xffEEA4CE),
+        mealCount: 8,
       )
     );
 
@@ -34,7 +38,8 @@ class CategoryModel {
       CategoryModel(
         name: 'Pie',
         iconPath: 'assets/icons/pie.svg',
-        boxColor: Color(0xff9DCEFF)
+        boxColor: Color(0xff9DCEFF),
+        mealCount: 6,
       )
     );
 
@@ -42,10 +47,28 @@ class CategoryModel {
       CategoryModel(
         name: 'Smoothies',
         iconPath: 'assets/icons/orange-snacks.svg',
-        boxColor: Color(0xffEEA4CE)
+        boxColor: Color(0xffEEA4CE),
+        mealCount: 10,
       )
     );
     
+    categories.add(
+      CategoryModel(
+        name: 'Pasta',
+        iconPath: 'assets/icons/plate.svg',
+        boxColor: Color(0xff9DCEFF),
+        mealCount: 9,
+      )
+    );
+
+    categories.add(
+      CategoryModel(
+        name: 'Soup',
+        iconPath: 'assets/icons/pie.svg',
+        boxColor: Color(0xffEEA4CE),
+        mealCount: 7,
+      )
+    );
 
     return categories;
   }
